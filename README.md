@@ -1,109 +1,109 @@
-# 光谱分析软件
+# Spectrum Analysis Software
 
-一款用于光谱数据预处理、分析和建模的专业软件工具。
+A professional software tool for spectral data preprocessing, analysis, and modeling.
 
-## 功能特点
+## Features
 
-- **支持多种光谱类型**：近红外、中红外、拉曼光谱等
-- **丰富的预处理方法**：标准化、平滑、求导、基线校正等
-- **强大的分析工具**：PCA、PLS、SVM等多元统计分析方法
-- **玉米成分含量预测**：针对近红外玉米光谱的专业化分析模块
-- **友好的用户界面**：基于PyQt5构建的交互式图形界面
-- **灵活的数据管理**：支持多种格式导入导出，会话保存与恢复
-- **高质量可视化**：各类光谱图、分析结果图表
+- **Supports Multiple Spectrum Types**: Near-infrared (NIR), mid-infrared (MIR), Raman spectroscopy, etc.
+- **Rich Preprocessing Methods**: Normalization, smoothing, derivation, baseline correction, etc.
+- **Powerful Analysis Tools**: Multivariate statistical analysis methods such as PCA, PLS, SVM, etc.
+- **Corn Component Content Prediction**: Specialized analysis module for near-infrared corn spectra
+- **User-Friendly Interface**: Interactive graphical interface built with PyQt5
+- **Flexible Data Management**: Supports multiple import and export formats, session saving and restoration
+- **High-Quality Visualization**: Various spectral plots, analysis result charts
 
-## 系统要求
+## System Requirements
 
-- Python 3.7 或更高版本
-- 操作系统：Windows/Linux/MacOS
+- Python 3.7 or higher
+- Operating System: Windows/Linux/macOS
 
-## 快速开始
+## Quick Start
 
-### 安装依赖
+### Install Dependencies
 
-```bash
+bash
 pip install -r requirements.txt
-```
 
-### 运行软件
 
-```bash
+### Run the Software
+
+bash
 python src/main.py
-```
 
-## 使用指南
 
-### 导入数据
+## User Guide
 
-1. 点击"文件"->"打开"，或使用工具栏上的"导入"按钮
-2. 选择要导入的光谱数据文件
-3. 根据需要配置导入参数
+### Import Data
 
-### 预处理数据
+1. Click "File" -> "Open", or use the "Import" button on the toolbar
+2. Select the spectral data file to import
+3. Configure import parameters as needed
 
-1. 在"预处理"选项卡中选择需要的预处理方法
-2. 设置相应的参数
-3. 点击"应用"按钮进行处理
-4. 预处理前后的结果会在图形区域显示对比
+### Preprocess Data
 
-### 分析数据
+1. Select the desired preprocessing method in the "Preprocessing" tab
+2. Set the corresponding parameters
+3. Click the "Apply" button to process
+4. A comparison of results before and after preprocessing will be displayed in the graphical area
 
-1. 切换到"分析"选项卡
-2. 选择合适的分析方法（PCA、PLS等）
-3. 设置分析参数
-4. 点击"运行"按钮执行分析
-5. 查看结果图表和数据报告
+### Analyze Data
 
-### 玉米成分分析
+1. Switch to the "Analysis" tab
+2. Select an appropriate analysis method (PCA, PLS, etc.)
+3. Set analysis parameters
+4. Click the "Run" button to execute the analysis
+5. View result charts and data reports
 
-1. 切换到"玉米分析"专用选项卡
-2. 点击"加载玉米数据文件"导入带有成分含量的光谱数据
-3. 选择合适的预处理方法并应用
-4. 选择模型类型(PLS、SVR或集成模型)
-5. 设置交叉验证参数并点击"训练模型"
-6. 查看预测结果和评估指标
+### Corn Component Analysis
 
-### 保存结果
+1. Switch to the dedicated "Corn Analysis" tab
+2. Click "Load Corn Data File" to import spectral data with component content
+3. Select appropriate preprocessing methods and apply them
+4. Choose a model type (PLS, SVR, or ensemble model)
+5. Set cross-validation parameters and click "Train Model"
+6. View prediction results and evaluation metrics
 
-1. 点击"文件"->"保存"保存当前会话
-2. 点击"文件"->"导出结果"导出分析结果
+### Save Results
 
-## 文件格式支持
+1. Click "File" -> "Save" to save the current session
+2. Click "File" -> "Export Results" to export analysis results
 
-- CSV (逗号分隔值文件)
-- TXT (制表符分隔文本文件)
-- JCAMP-DX (光谱数据标准格式)
-- JSON (用于元数据和设置)
-- HDF5 (用于大型数据集)
-- MAT (MATLAB数据文件)
+## Supported File Formats
 
-## 开发指南
+- CSV (Comma-Separated Values)
+- TXT (Tab-Separated Text File)
+- JCAMP-DX (Standard format for spectral data)
+- JSON (For metadata and settings)
+- HDF5 (For large datasets)
+- MAT (MATLAB data file)
 
-详细的开发文档请参见 `docs/` 目录：
+## Development Guide
 
-- [软件设计文档](docs/design.md)
-- [项目依赖说明](docs/requirements.md)
+Detailed development documentation can be found in the `docs/` directory:
 
-### 项目结构
+- [Software Design Document](docs/design.md)
+- [Project Dependencies](docs/requirements.md)
 
-```
+### Project Structure
+
+
 spectrum_analyzer/
-├── docs/                   # 文档
-├── src/                    # 源代码
-│   ├── main.py             # 主程序入口
-│   ├── core/               # 核心算法
-│   ├── data/               # 数据处理
-│   ├── gui/                # 图形界面
-│   └── tests/              # 测试代码
-├── data/                   # 示例数据
-├── requirements.txt        # 依赖列表
-└── README.md               # 项目说明
-```
+├── docs/                   # Documentation
+├── src/                    # Source code
+│   ├── main.py             # Main program entry
+│   ├── core/               # Core algorithms
+│   ├── data/               # Data processing
+│   ├── gui/                # Graphical interface
+│   └── tests/              # Test code
+├── data/                   # Sample data
+├── requirements.txt        # Dependency list
+└── README.md               # Project description
 
-## 许可证
 
-本项目采用 MIT 许可证 - 详情请参阅 LICENSE 文件
+## License
 
-## 联系方式
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-如有问题或建议，请通过 [issues](https://github.com/yourusername/spectrum-analyzer/issues) 页面提交。 
+## Contact
+
+For questions or suggestions, please submit them via the [issues] page.
