@@ -4,32 +4,32 @@ A professional software tool for spectral data preprocessing, analysis, and mode
 
 ## Features
 
-- **Supports Multiple Spectrum Types**: Near-infrared (NIR), mid-infrared (MIR), Raman spectroscopy, etc.
-- **Rich Preprocessing Methods**: Normalization, smoothing, derivation, baseline correction, etc.
-- **Powerful Analysis Tools**: Multivariate statistical analysis methods such as PCA, PLS, SVM, etc.
-- **Corn Component Content Prediction**: Specialized analysis module for near-infrared corn spectra
+- **Multiple Spectral Types Support**: Near-infrared, mid-infrared, Raman spectroscopy, etc.
+- **Rich Preprocessing Methods**: Normalization, smoothing, derivative calculation, baseline correction, etc.
+- **Powerful Analysis Tools**: PCA, PLS, SVM and other multivariate statistical analysis methods
+- **Corn Component Prediction**: Specialized analysis module for near-infrared corn spectral data
 - **User-Friendly Interface**: Interactive graphical interface built with PyQt5
-- **Flexible Data Management**: Supports multiple import and export formats, session saving and restoration
+- **Flexible Data Management**: Support for multiple import/export formats, session save and restore
 - **High-Quality Visualization**: Various spectral plots, analysis result charts
 
 ## System Requirements
 
 - Python 3.7 or higher
-- Operating System: Windows/Linux/macOS
+- Operating System: Windows/Linux/MacOS
 
 ## Quick Start
 
 ### Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
+```
 
+### Run Software
 
-### Run the Software
-
-bash
+```bash
 python src/main.py
-
+```
 
 ## User Guide
 
@@ -41,52 +41,52 @@ python src/main.py
 
 ### Preprocess Data
 
-1. Select the desired preprocessing method in the "Preprocessing" tab
-2. Set the corresponding parameters
+1. Select the required preprocessing method in the "Preprocessing" tab
+2. Set corresponding parameters
 3. Click the "Apply" button to process
-4. A comparison of results before and after preprocessing will be displayed in the graphical area
+4. Results before and after preprocessing will be displayed in the graphics area for comparison
 
 ### Analyze Data
 
 1. Switch to the "Analysis" tab
-2. Select an appropriate analysis method (PCA, PLS, etc.)
+2. Select appropriate analysis method (PCA, PLS, etc.)
 3. Set analysis parameters
-4. Click the "Run" button to execute the analysis
+4. Click the "Run" button to execute analysis
 5. View result charts and data reports
 
 ### Corn Component Analysis
 
-1. Switch to the dedicated "Corn Analysis" tab
+1. Switch to the "Corn Analysis" dedicated tab
 2. Click "Load Corn Data File" to import spectral data with component content
-3. Select appropriate preprocessing methods and apply them
-4. Choose a model type (PLS, SVR, or ensemble model)
+3. Select appropriate preprocessing methods and apply
+4. Select model type (PLS, SVR or ensemble model)
 5. Set cross-validation parameters and click "Train Model"
 6. View prediction results and evaluation metrics
 
 ### Save Results
 
-1. Click "File" -> "Save" to save the current session
+1. Click "File" -> "Save" to save current session
 2. Click "File" -> "Export Results" to export analysis results
 
 ## Supported File Formats
 
 - CSV (Comma-Separated Values)
-- TXT (Tab-Separated Text File)
+- TXT (Tab-separated text files)
 - JCAMP-DX (Standard format for spectral data)
 - JSON (For metadata and settings)
 - HDF5 (For large datasets)
-- MAT (MATLAB data file)
+- MAT (MATLAB data files)
 
 ## Development Guide
 
-Detailed development documentation can be found in the `docs/` directory:
+For detailed development documentation, please refer to the `docs/` directory:
 
 - [Software Design Document](docs/design.md)
 - [Project Dependencies](docs/requirements.md)
 
 ### Project Structure
 
-
+```
 spectrum_analyzer/
 ├── docs/                   # Documentation
 ├── src/                    # Source code
@@ -96,14 +96,14 @@ spectrum_analyzer/
 │   ├── gui/                # Graphical interface
 │   └── tests/              # Test code
 ├── data/                   # Sample data
-├── requirements.txt        # Dependency list
+├── requirements.txt        # Dependencies list
 └── README.md               # Project description
-
+```
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Contact
 
-For questions or suggestions, please submit them via the [issues] page.
+For questions or suggestions, please submit through the [issues] page. 
